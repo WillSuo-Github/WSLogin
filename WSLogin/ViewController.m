@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WSLoginViewController.h"
 
 @interface ViewController ()
 
@@ -20,9 +21,11 @@
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
+    
+    WSLoginViewController *loginVc = [[WSLoginViewController alloc] init];
+    [self presentViewController:loginVc animated:true completion:nil];
 }
 
 
