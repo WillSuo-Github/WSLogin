@@ -10,6 +10,6 @@
 
 @interface Target_WSLogin : NSObject
 
-- (UIViewController *)Action_controller;
+- (UIViewController *)Action_controller:(NSDictionary *)params;
 
 @end

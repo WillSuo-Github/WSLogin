@@ -11,7 +11,7 @@
 
 @implementation Target_WSLogin
 
-- (UIViewController *)Action_controller{
+- (UIViewController *)Action_controller:(NSDictionary *)params{
     WSLoginViewController *loginVc = [[WSLoginViewController alloc] init];
     return loginVc;
 }
