@@ -12,7 +12,7 @@
 @implementation Target_WSLogin
 
 - (UIViewController *)Action_controller:(NSDictionary *)params{
-    WSLoginViewController *loginVc = [[WSLoginViewController alloc] initWithNibName:@"WSLoginViewController" bundle:nil];
+    WSLoginViewController *loginVc = [[WSLoginViewController alloc] init];
     return loginVc;
 }
 @end
