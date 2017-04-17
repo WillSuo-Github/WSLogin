@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WSLogin"
-  s.version      = "13"
+  s.version      = "14"
   s.summary      = "WSLogin."
 
   # This description is used to generate tags and improve search results.
@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   s.source_files  = "WSLogin/WSLogin/**/*.{h,m,xib}"
   # s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "WSLogin/WSLogin/**/*.{h,xib}"
+  # s.public_header_files = "WSLogin/WSLogin/**/*.{h,xib}"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "WSLogin/WSLogin/**/*.xib"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
