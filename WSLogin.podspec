@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WSLogin"
-  s.version      = "8"
+  s.version      = "9"
   s.summary      = "WSLogin."
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "WSLogin/WSLogin/**/*.{h,m}"
+  s.source_files  = "WSLogin/WSLogin/**/*.{h,m,xib}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
