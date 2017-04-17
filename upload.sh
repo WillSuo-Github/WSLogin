@@ -1,1 +1,1 @@
-pod repo push PrivatePods WSLogin.podspec --verbose --allow-warnings
+pod repo push WSPrivateRepo WSLogin.podspec --verbose --allow-warnings
