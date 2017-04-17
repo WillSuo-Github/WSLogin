@@ -16,6 +16,7 @@
 		5432FBAB1EA4A33900079D82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5432FBA91EA4A33900079D82 /* LaunchScreen.storyboard */; };
 		5432FBB61EA4A8C700079D82 /* WSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5432FBB41EA4A8C700079D82 /* WSLoginViewController.m */; };
 		5432FBB71EA4A8C700079D82 /* WSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5432FBB51EA4A8C700079D82 /* WSLoginViewController.xib */; };
+		5432FBDE1EA4AC4B00079D82 /* Target_WSLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5432FBDD1EA4AC4B00079D82 /* Target_WSLogin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		5432FBB31EA4A8C700079D82 /* WSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLoginViewController.h; sourceTree = "<group>"; };
 		5432FBB41EA4A8C700079D82 /* WSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLoginViewController.m; sourceTree = "<group>"; };
 		5432FBB51EA4A8C700079D82 /* WSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSLoginViewController.xib; sourceTree = "<group>"; };
+		5432FBDC1EA4AC4B00079D82 /* Target_WSLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_WSLogin.h; sourceTree = "<group>"; };
+		5432FBDD1EA4AC4B00079D82 /* Target_WSLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_WSLogin.m; sourceTree = "<group>"; };
 		C0167A2377BD92C8265EAE7B /* libPods-WSLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WSLogin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD25005BA64BF3065106CED /* Pods-WSLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSLogin/Pods-WSLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,12 +107,22 @@
 		5432FBB21EA4A8BB00079D82 /* WSLogin */ = {
 			isa = PBXGroup;
 			children = (
+				5432FBDB1EA4AC3B00079D82 /* Target */,
 				5432FBB31EA4A8C700079D82 /* WSLoginViewController.h */,
 				5432FBB41EA4A8C700079D82 /* WSLoginViewController.m */,
 				5432FBB51EA4A8C700079D82 /* WSLoginViewController.xib */,
 			);
 			name = WSLogin;
 			path = WSLogin/WSLogin;
+			sourceTree = "<group>";
+		};
+		5432FBDB1EA4AC3B00079D82 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				5432FBDC1EA4AC4B00079D82 /* Target_WSLogin.h */,
+				5432FBDD1EA4AC4B00079D82 /* Target_WSLogin.m */,
+			);
+			path = Target;
 			sourceTree = "<group>";
 		};
 		6203AD8B142CDB7ADA098415 /* Frameworks */ = {
@@ -244,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5432FBB61EA4A8C700079D82 /* WSLoginViewController.m in Sources */,
+				5432FBDE1EA4AC4B00079D82 /* Target_WSLogin.m in Sources */,
 				5432FBA31EA4A33900079D82 /* ViewController.m in Sources */,
 				5432FBA01EA4A33900079D82 /* AppDelegate.m in Sources */,
 				5432FB9D1EA4A33900079D82 /* main.m in Sources */,
