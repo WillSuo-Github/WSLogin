@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F5769D2A23E86ABE2BD238E /* libPods-WSLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0167A2377BD92C8265EAE7B /* libPods-WSLogin.a */; };
 		5432FB9D1EA4A33900079D82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5432FB9C1EA4A33900079D82 /* main.m */; };
 		5432FBA01EA4A33900079D82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5432FB9F1EA4A33900079D82 /* AppDelegate.m */; };
 		5432FBA31EA4A33900079D82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5432FBA21EA4A33900079D82 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15485BDABCE6C75E9A9E39D9 /* Pods-WSLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-WSLogin/Pods-WSLogin.release.xcconfig"; sourceTree = "<group>"; };
 		5432FB981EA4A33900079D82 /* WSLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5432FB9C1EA4A33900079D82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5432FB9E1EA4A33900079D82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		5432FBA71EA4A33900079D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5432FBAA1EA4A33900079D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5432FBAC1EA4A33900079D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0167A2377BD92C8265EAE7B /* libPods-WSLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WSLogin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD25005BA64BF3065106CED /* Pods-WSLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WSLogin/Pods-WSLogin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5769D2A23E86ABE2BD238E /* libPods-WSLogin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25AB531D9A4AE0F5F04A9805 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAD25005BA64BF3065106CED /* Pods-WSLogin.debug.xcconfig */,
+				15485BDABCE6C75E9A9E39D9 /* Pods-WSLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5432FB8F1EA4A33900079D82 = {
 			isa = PBXGroup;
 			children = (
 				5432FB9A1EA4A33900079D82 /* WSLogin */,
 				5432FB991EA4A33900079D82 /* Products */,
+				25AB531D9A4AE0F5F04A9805 /* Pods */,
+				6203AD8B142CDB7ADA098415 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6203AD8B142CDB7ADA098415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0167A2377BD92C8265EAE7B /* libPods-WSLogin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5432FBAF1EA4A33900079D82 /* Build configuration list for PBXNativeTarget "WSLogin" */;
 			buildPhases = (
+				0E29EC38F3DE665204BED99D /* [CP] Check Pods Manifest.lock */,
 				5432FB941EA4A33900079D82 /* Sources */,
 				5432FB951EA4A33900079D82 /* Frameworks */,
 				5432FB961EA4A33900079D82 /* Resources */,
+				62C25AE675FA8CB26B002B85 /* [CP] Embed Pods Frameworks */,
+				81F6215E3D0AC1B3CDB0F7F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E29EC38F3DE665204BED99D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62C25AE675FA8CB26B002B85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WSLogin/Pods-WSLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F6215E3D0AC1B3CDB0F7F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WSLogin/Pods-WSLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5432FB941EA4A33900079D82 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		5432FBB01EA4A33900079D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAD25005BA64BF3065106CED /* Pods-WSLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WSLogin/Info.plist;
@@ -283,6 +359,7 @@
 		};
 		5432FBB11EA4A33900079D82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15485BDABCE6C75E9A9E39D9 /* Pods-WSLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WSLogin/Info.plist;
